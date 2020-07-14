@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SongsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/miniPlayer"
+        android:id="@+id/recyclerView"
+        android:background="@android:color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:padding="10dp"
+        android:id="@+id/miniPlayer">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/song_image"
+            android:src="@drawable/ic_baseline_library_music"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/miniplayersongname"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/song_image"
+            android:layout_toStartOf="@+id/play_pause_mini"
+            android:text="Song Name"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/play_pause_mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:backgroundTint="#000000"
+            app:borderWidth="0dp"
+            android:elevation="6dp"
+            android:src="@drawable/ic_baseline_play_arrow"
+            app:rippleColor="@color/cardview_dark_background" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

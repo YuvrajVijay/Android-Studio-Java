@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">socialdis</string>
+    <string name="bluetooth_on">Bluetooth On</string>
+    <string name="bluetooth_off">Bluetooth Off</string>
+    <string name="scan_devices">scan devices</string>
+    <string name="textview1">TextView1</string>
+    <string name="textview2">TextView2</string>
+    <string name="textview3">TextView3</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="available_devices">Available Devices</string>
+    <string name="body_temperature">Body Temperature</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="everything_is_fine">Everything is fine</string>
+    <string name="button">Button</string>
+    <string name="temp">Temp.</string>
+    <string name="heart">heart</string>
+    <string name="update">Update</string>
+    <string name="textview">TextView</string>
+    <string name="caliberate">Caliberate</string>
+    <string name="get_heartrate_bodytemp">Get HeartRate BodyTemp</string>
+</resources>

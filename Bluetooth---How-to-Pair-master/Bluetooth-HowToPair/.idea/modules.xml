@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bluetooth---How-to-Pair-master-Bluetooth-HowToPair.iml" filepath="$PROJECT_DIR$/Bluetooth---How-to-Pair-master-Bluetooth-HowToPair.iml" group="Bluetooth-HowToPair" />
+      <module fileurl="file://$PROJECT_DIR$/Bluetooth-HowToPair.iml" filepath="$PROJECT_DIR$/Bluetooth-HowToPair.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Bluetooth-HowToPair-app.iml" filepath="$PROJECT_DIR$/app/Bluetooth-HowToPair-app.iml" group="Bluetooth-HowToPair/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

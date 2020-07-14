@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SongsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_layout_add_playlist">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_playlist_image"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_add_circle_outline"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/add_playlist_image"
+            android:layout_centerHorizontal="true"
+            android:text="New Playlist"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_layout_fav_playlist"
+        android:layout_below="@+id/relative_layout_add_playlist">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fav_playlist_image"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_favorite_border"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fav_playlist_image"
+            android:layout_centerHorizontal="true"
+            android:text="Favourites"
+            android:textSize="18sp"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/relative_layout_fav_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView_playlist"
+        android:background="@android:color/black"/>
+
+</RelativeLayout>

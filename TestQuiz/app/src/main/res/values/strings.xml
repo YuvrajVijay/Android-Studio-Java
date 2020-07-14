@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TestQuiz</string>
+
+    <string name="true_text">True</string>
+    <string name="false_text">False</string>
+    <string name="correct_answer">That\'s correct</string>
+    <string name="wrong_answer">That\'s incorrect</string>
+    <string name="my_text_question">My Text Questions</string>
+    <string name="my_text_question1">2+3<b>=</b>5</string>
+    <string name="my_text_question2">5/2<b>!=</b>2.5</string>
+    <string name="next_question">Next Question</string>
+    <string name="prev_question">Previous Question</string>
+    <string name="guess">Guess_the_name</string>
+    <string name="add_guess">Enter Guess</string>
+    <string name="show_answer">Show Answer</string>
+
+</resources>

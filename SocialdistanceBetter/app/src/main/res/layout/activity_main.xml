@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/distancecheaker"
+        android:layout_width="wrap_content"
+        android:textSize="48sp"
+        android:layout_height="wrap_content"
+        android:text="@string/everything_is_fine" />
+
+    <TextView
+        android:id="@+id/handcheacker"
+        android:layout_width="wrap_content"
+        android:textSize="48sp"
+        android:layout_height="wrap_content"
+        android:text="@string/everything_is_fine" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/heartrate"
+                android:text="@string/heart_rate"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/bodytemp"
+                android:text="@string/body_temperature"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/caliberate"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/caliberate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/paireddevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paired_devices"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <ListView
+                android:id="@+id/paireddeviceslist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/availabledevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/available_devices"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <ListView
+                android:id="@+id/availabledeviceslist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

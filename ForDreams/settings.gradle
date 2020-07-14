@@ -1,0 +1,3 @@
+include ':learn'
+rootProject.name='For Dreams'
+include ':app'

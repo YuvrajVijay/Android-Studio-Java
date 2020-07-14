@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".newNoDoactivity">
+    <EditText
+        android:id="@+id/edit_nodo"
+        android:hint="@string/hint_nodo"
+        android:layout_width="match_parent"
+        android:inputType="textAutoComplete"
+        android:padding="6dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/button_save"
+        android:background="@color/colorAccent"
+        android:text="@string/save_text"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

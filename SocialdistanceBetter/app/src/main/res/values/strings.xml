@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SocialdistanceBetter</string>
+    <string name="heart_rate">Heart Rate: </string>
+    <string name="body_temperature">Body Temperature:</string>
+    <string name="caliberate">Caliberate</string>
+    <string name="paired_devices"><u>Paired Devices</u></string>
+    <string name="everything_is_fine">Everything is Fine</string>
+    <string name="available_devices">Available Devices</string>
+</resources>

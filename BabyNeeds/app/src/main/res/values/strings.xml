@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Baby Needs</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="add_item">Add item</string>
+    <string name="enter_item">Enter Item</string>
+    <string name="hint_item">Enter item</string>
+    <string name="hint_qnt">Enter Quantity</string>
+    <string name="hint_color">Enter color</string>
+    <string name="hint_size">Enter size</string>
+    <string name="save_button">Save</string>
+    <string name="del_table">DROP TABLE IF EXISTS</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="color">Color</string>
+    <string name="size">Size</string>
+    <string name="quantity">Quantity</string>
+    <string name="babyneedsitem">Baby Needs Item</string>
+    <string name="are_you_sure">are you sure</string>
+    <string name="no_text">No</string>
+    <string name="yes_text">yes</string>
+</resources>

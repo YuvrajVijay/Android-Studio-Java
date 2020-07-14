@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IntroFirestore</string>
+    <string name="enter_title">Enter title</string>
+    <string name="save">save</string>
+    <string name="enter_thoughts">Enter Thoughts</string>
+    <string name="show_data">show data</string>
+</resources>
