@@ -4,4 +4,8 @@
     <string name="save">save</string>
     <string name="enter_thoughts">Enter Thoughts</string>
     <string name="show_data">show data</string>
+    <string name="update_data">Update</string>
+    <string name="delete_data">Delete using title</string>
+    <string name="delete_thoughts">delete thoughts</string>
+    <string name="delete_all">delete all</string>
 </resources>
