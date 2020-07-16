@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SelfJournal</string>
+    <string name="self_graditude_journal">Self.Graditude.Journal</string>
+    <string name="what_are_your_grateful_for_today">What are your Grateful for Today?</string>
+    <string name="get_started">Get Started</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or_text">Or</string>
+    <string name="createaccount">Create Accunt</string>
+    <string name="username">Username</string>
+</resources>
