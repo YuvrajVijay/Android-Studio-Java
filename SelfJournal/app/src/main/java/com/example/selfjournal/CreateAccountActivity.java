@@ -139,7 +139,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                                 .addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
-
+                                        Toast.makeText(CreateAccountActivity.this,"Failed",Toast.LENGTH_SHORT).show();
                                     }
                                 });
 
@@ -149,7 +149,7 @@ public class CreateAccountActivity extends AppCompatActivity {
             .addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-
+                    Toast.makeText(CreateAccountActivity.this,"Failed",Toast.LENGTH_SHORT).show();
                 }
             });
         }else{

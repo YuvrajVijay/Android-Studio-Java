@@ -4,84 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@android:color/transparent"
     tools:context=".PostJournalActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="412dp"
         android:layout_height="271dp"
+        android:src="@drawable/you"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:contentDescription="@string/background_image" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/post_username_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:text="@string/post_name"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="281dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="108dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.301"
-        tools:srcCompat="@android:drawable/ic_menu_camera" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="299dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="match_parent"
-        android:padding="18dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <ImageView
+        android:id="@+id/postCameraButton"
+        android:layout_width="108dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:contentDescription="@string/to_set_a_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359"
+        android:src="@drawable/ic_baseline_photo_camera"
+        />
+
+    <TextView
+        android:id="@+id/post_date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/post_today_date"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_username_textview" />
+
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/post_title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="@string/post_title"
+        android:inputType="textPersonName"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/post_discription_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:padding="18dp"
         android:ems="10"
+        android:hint="@string/post_your_thoughts"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:padding="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/post_title_et"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="Autofill" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/post_progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -91,15 +98,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/post_save_journal_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
-        android:text="Button"
+        android:background="@android:color/transparent"
+        android:text="@string/post_save_button"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/post_discription_et"
         app:layout_constraintVertical_bias="0.647" />
 </androidx.constraintlayout.widget.ConstraintLayout>
