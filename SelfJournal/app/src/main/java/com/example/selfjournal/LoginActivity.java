@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,6 +28,8 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.Objects;
+
 import Model.Journal;
 import util.JournalApi;
 
@@ -36,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button createAcctButton;
     private AutoCompleteTextView email;
     private EditText password;
+    private ProgressBar progressBar;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -50,12 +54,16 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        Objects.requireNonNull(getSupportActionBar()).setElevation(0);
+
+
         firebaseAuth=FirebaseAuth.getInstance();
 
         loginButton=findViewById(R.id.email_sign_in_button);
         createAcctButton=findViewById(R.id.create_acc_button_login);
         email=findViewById(R.id.email);
         password=findViewById(R.id.password);
+        progressBar=findViewById(R.id.login_progress);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +82,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginEmialPasswordUser(String email, String password) {
+
+        progressBar.setVisibility(View.VISIBLE);
         if(!TextUtils.isEmpty(email)&&
         !TextUtils.isEmpty(password)){
 
@@ -94,6 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                                             }
                                             assert value != null;
                                             if(!value.isEmpty()){
+                                                progressBar.setVisibility(View.INVISIBLE);
                                                 for(QueryDocumentSnapshot snapshot: value){
                                                     JournalApi journalApi=JournalApi.getInstance();
                                                     journalApi.setUsername(snapshot.getString("username"));
@@ -113,11 +124,12 @@ public class LoginActivity extends AppCompatActivity {
                     .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-
+                            progressBar.setVisibility(View.INVISIBLE);
                         }
                     });
 
         }else {
+            progressBar.setVisibility(View.INVISIBLE);
             Toast.makeText(LoginActivity.this,
                     "Fields Can't be empty",Toast.LENGTH_SHORT).show();
         }

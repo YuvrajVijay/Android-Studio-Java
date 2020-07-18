@@ -29,6 +29,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.util.Date;
+import java.util.Objects;
 
 import Model.Journal;
 import util.JournalApi;
@@ -63,6 +64,9 @@ public class PostJournalActivity extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_journal);
+
+        Objects.requireNonNull(getSupportActionBar()).setElevation(0);
+
 
         storageReference= FirebaseStorage.getInstance().getReference();
         firebaseAuth=FirebaseAuth.getInstance();

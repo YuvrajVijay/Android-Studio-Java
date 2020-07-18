@@ -16,4 +16,7 @@
     <string name="post_title">Title</string>
     <string name="post_your_thoughts">Your Thoughts...</string>
     <string name="post_save_button">Save</string>
+    <string name="menu_title">Menu Title</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="click_on_top_right_add_button_to_add_a_thought">Click on Top-Right Add Button to add a thought</string>
 </resources>
