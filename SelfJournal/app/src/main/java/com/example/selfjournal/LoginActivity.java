@@ -82,7 +82,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginEmialPasswordUser(String email, String password) {
-
         progressBar.setVisibility(View.VISIBLE);
         if(!TextUtils.isEmpty(email)&&
         !TextUtils.isEmpty(password)){
